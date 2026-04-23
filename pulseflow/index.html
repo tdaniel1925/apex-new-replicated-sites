@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PulseFlow AI Marketing - Done-For-You Social Media Management for $149/month">
-    <title>PulseFlow AI Marketing - Apex Affinity Group</title>
+    <meta name="description" content="Pulse AI Marketing Platform - PulseFlow and PulseCommand. Done-for-you marketing from $129/month.">
+    <title>Pulse - AI Marketing Platform | Apex Affinity Group</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.3.0/dist/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="/styles.css">
@@ -13,10 +13,15 @@
         theme: { extend: { colors: { background: 'var(--background)', foreground: 'var(--foreground)', primary: { DEFAULT: 'var(--primary)', foreground: 'var(--primary-foreground)' }, secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' }, tertiary: 'var(--tertiary)', muted: { DEFAULT: 'var(--muted)', foreground: 'var(--muted-foreground)' }, card: { DEFAULT: 'var(--card)' }, border: 'var(--border)', input: 'var(--input)', ring: 'var(--ring)' }, fontFamily: { heading: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'] } } }
       }
     </script>
+    <style>
+      .pulse-blue { --pc: #185FA5; --pc-bg: #E6F1FB; --pc-dark: #0C447C; }
+      .pulse-purple { --pc: #534AB7; --pc-bg: #EEEDFE; --pc-dark: #3C3489; }
+    </style>
 </head>
 <body>
 
 <div class="min-h-screen w-full bg-background flex flex-col relative font-sans text-foreground">
+
   <!-- Navigation -->
   <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border px-6 py-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
@@ -24,145 +29,600 @@
       <div class="hidden md:flex gap-8">
         <a href="/" class="text-sm font-medium hover:text-[#213B8A]">Home</a>
         <a href="/opportunity" class="text-sm font-medium hover:text-[#213B8A]">Opportunity</a>
-        <a href="/pulseflow" class="text-sm font-bold text-[#213B8A]">PulseFlow</a>
+        <a href="/pulseflow" class="text-sm font-bold text-[#213B8A]">Pulse</a>
         <a href="/insurance" class="text-sm font-medium hover:text-[#213B8A]">Insurance</a>
         <a href="/pricing" class="text-sm font-medium hover:text-[#213B8A]">Pricing</a>
       </div>
       <div class="flex items-center gap-4">
-        <a href="/signup" class="px-5 py-2 rounded-lg bg-[#213B8A] text-white text-sm font-bold hover:opacity-90">Try PulseFlow</a>
+        <a href="/signup" class="px-5 py-2 rounded-lg bg-[#213B8A] text-white text-sm font-bold hover:opacity-90">Get Started</a>
         <button id="menu-btn" class="md:hidden flex flex-col justify-center" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
     </div>
     <div id="mobile-menu" class="flex-col gap-4 pt-4 md:hidden">
       <a href="/" class="block py-2 text-sm font-medium">Home</a>
       <a href="/opportunity" class="block py-2 text-sm font-medium">Opportunity</a>
-      <a href="/pulseflow" class="block py-2 text-sm font-bold text-[#213B8A]">PulseFlow</a>
+      <a href="/pulseflow" class="block py-2 text-sm font-bold text-[#213B8A]">Pulse</a>
       <a href="/insurance" class="block py-2 text-sm font-medium">Insurance</a>
       <a href="/pricing" class="block py-2 text-sm font-medium">Pricing</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="pt-24 pb-20 px-6 bg-gradient-to-b from-[#213B8A]/5 to-white">
-    <div class="max-w-7xl mx-auto text-center">
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#213B8A]/10 text-[#213B8A] text-sm font-bold mb-8">
+  <!-- ============================================================ -->
+  <!-- HERO -->
+  <!-- ============================================================ -->
+  <section class="pt-24 pb-20 px-6 bg-gradient-to-b from-[#213B8A] to-[#0f1f4d] text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5 pointer-events-none">
+      <iconify-icon icon="lucide:radio-tower" class="text-[600px] absolute -right-40 -top-20"></iconify-icon>
+    </div>
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/10 border border-white/20 text-sm font-bold mb-8">
         <iconify-icon icon="lucide:zap" class="text-[#C11F26]"></iconify-icon>
-        Done-For-You Marketing
+        AI Marketing Platform
       </div>
-      <h1 class="text-4xl md:text-6xl font-heading font-bold text-[#213B8A] mb-6 leading-tight">
-        Your Entire Social Media.<br><span class="text-[#C11F26]">Done For You. $149/Month.</span>
+      <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6 leading-tight">
+        Your Entire Marketing Engine.<br>
+        <span class="text-[#C11F26]">Built by AI. Run for You.</span>
       </h1>
-      <p class="text-lg md:text-xl text-[#64748B] max-w-3xl mx-auto mb-10">
-        We handle your content creation, posting, and strategy across up to 10 platforms -- 60 pieces of fresh content every single month -- while you focus on running your business.
+      <p class="text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-10 leading-relaxed">
+        Pulse is the AI marketing platform that replaces your social media manager, email marketer, content writer, podcast producer, and video team -- all for a fraction of what one of those would cost.
       </p>
-      <a href="/signup" class="inline-block px-10 py-4 rounded-xl bg-[#213B8A] text-white font-bold text-xl shadow-2xl hover:scale-105 transition-transform">
-        Start PulseFlow -- $39 First Month for New Reps
-      </a>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#pulseflow" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#185FA5] text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform text-center">PulseFlow — from $129/mo</a>
+        <a href="#pulsecommand" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#534AB7] text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform text-center">PulseCommand — from $349/mo</a>
+      </div>
+      <p class="mt-4 text-sm text-white/50">Member pricing from $129/mo. Retail from $149/mo. New reps get their first month for just $39.</p>
     </div>
   </section>
 
-  <!-- Value Comparison Table -->
+  <!-- ============================================================ -->
+  <!-- STATS BAR -->
+  <!-- ============================================================ -->
+  <div class="bg-[#0f1f4d] py-6 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-5 gap-6 text-center text-white">
+      <div>
+        <div class="text-3xl font-bold">150+</div>
+        <div class="text-xs text-white/60">Social Posts/Mo</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold">&infin;</div>
+        <div class="text-xs text-white/60">Landing Pages</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold">8</div>
+        <div class="text-xs text-white/60">Email Campaigns/Mo</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold">4+</div>
+        <div class="text-xs text-white/60">Podcast Platforms</div>
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <div class="text-3xl font-bold">24hr</div>
+        <div class="text-xs text-white/60">Setup Time</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- WHAT AGENCIES CHARGE VS PULSE -->
+  <!-- ============================================================ -->
   <section class="py-24 px-6 bg-[#F1F5F9]/30">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl font-heading font-bold text-[#213B8A]">What the Market Charges vs. What You Pay</h2>
-        <p class="text-[#64748B] mt-2">The math is simple. The savings are massive.</p>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#213B8A] mb-4">Stop Paying Agency Prices for Basic Marketing</h2>
+        <p class="text-[#64748B] max-w-2xl mx-auto">Agencies charge $4,800 to $15,000 per month for what Pulse does starting at $129. The math isn't close.</p>
       </div>
-      <div class="bg-[#F8FAFC] rounded-3xl shadow-xl border border-[#E2E8F0] overflow-hidden">
+      <div class="bg-white rounded-3xl shadow-xl border border-[#E2E8F0] overflow-hidden">
         <div class="grid grid-cols-1 md:grid-cols-2">
           <div class="p-10 border-b md:border-b-0 md:border-r border-[#E2E8F0]">
-            <div class="text-sm font-bold uppercase tracking-widest text-[#64748B] mb-4">Marketing Agencies</div>
-            <div class="text-4xl font-bold text-[#0F172A] mb-6">$4,800+<span class="text-sm font-normal">/mo</span></div>
+            <div class="text-sm font-bold uppercase tracking-widest text-[#64748B] mb-4">Traditional Agencies</div>
+            <div class="text-4xl font-bold text-[#0F172A] mb-6">$4,800 – $15,000<span class="text-sm font-normal">/mo</span></div>
             <ul class="space-y-4">
-              <li class="flex items-start gap-3 text-sm text-[#64748B]">
-                <iconify-icon icon="lucide:x-circle" class="text-[#C11F26] mt-0.5"></iconify-icon>
-                Social Media Management ($2K - $5K)
-              </li>
-              <li class="flex items-start gap-3 text-sm text-[#64748B]">
-                <iconify-icon icon="lucide:x-circle" class="text-[#C11F26] mt-0.5"></iconify-icon>
-                Content Creation ($2.4K - $9K)
-              </li>
-              <li class="flex items-start gap-3 text-sm text-[#64748B]">
-                <iconify-icon icon="lucide:x-circle" class="text-[#C11F26] mt-0.5"></iconify-icon>
-                Custom Landing Pages ($3K - $15K)
-              </li>
+              <li class="flex items-start gap-3 text-sm text-[#64748B]"><iconify-icon icon="lucide:x-circle" class="text-[#C11F26] mt-0.5 flex-shrink-0"></iconify-icon>Social Media Management ($2K – $5K)</li>
+              <li class="flex items-start gap-3 text-sm text-[#64748B]"><iconify-icon icon="lucide:x-circle" class="text-[#C11F26] mt-0.5 flex-shrink-0"></iconify-icon>Content Creation ($2.4K – $9K)</li>
+              <li class="flex items-start gap-3 text-sm text-[#64748B]"><iconify-icon icon="lucide:x-circle" class="text-[#C11F26] mt-0.5 flex-shrink-0"></iconify-icon>Landing Pages ($3K – $15K one-time)</li>
+              <li class="flex items-start gap-3 text-sm text-[#64748B]"><iconify-icon icon="lucide:x-circle" class="text-[#C11F26] mt-0.5 flex-shrink-0"></iconify-icon>Email Marketing ($500 – $2K)</li>
+              <li class="flex items-start gap-3 text-sm text-[#64748B]"><iconify-icon icon="lucide:x-circle" class="text-[#C11F26] mt-0.5 flex-shrink-0"></iconify-icon>Video Production ($2K – $10K per video)</li>
             </ul>
           </div>
           <div class="p-10 bg-[#213B8A] text-white relative">
             <div class="absolute top-6 right-6 px-3 py-1 bg-[#C11F26] rounded-full text-[10px] font-bold uppercase text-white">Apex Exclusive</div>
-            <div class="text-sm font-bold uppercase tracking-widest opacity-70 mb-4">PulseFlow AI</div>
-            <div class="text-4xl font-bold mb-6">$149<span class="text-sm font-normal">/mo</span></div>
+            <div class="text-sm font-bold uppercase tracking-widest opacity-70 mb-4">Pulse AI Platform</div>
+            <div class="text-4xl font-bold mb-2">$129 – $349<span class="text-sm font-normal">/mo</span></div>
+            <p class="text-sm text-white/60 mb-6">Member pricing. Retail from $149.</p>
             <ul class="space-y-4">
-              <li class="flex items-start gap-3 text-sm">
-                <iconify-icon icon="lucide:check-circle" class="text-[#C11F26] mt-0.5"></iconify-icon>
-                60 Custom Posts &amp; 10 Platforms
-              </li>
-              <li class="flex items-start gap-3 text-sm">
-                <iconify-icon icon="lucide:check-circle" class="text-[#C11F26] mt-0.5"></iconify-icon>
-                3 Custom Landing Pages Included
-              </li>
-              <li class="flex items-start gap-3 text-sm">
-                <iconify-icon icon="lucide:check-circle" class="text-[#C11F26] mt-0.5"></iconify-icon>
-                GoHighLevel CRM Included ($297 Value)
-              </li>
+              <li class="flex items-start gap-3 text-sm"><iconify-icon icon="lucide:check-circle" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>Up to 150+ social posts/month</li>
+              <li class="flex items-start gap-3 text-sm"><iconify-icon icon="lucide:check-circle" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>Unlimited landing pages</li>
+              <li class="flex items-start gap-3 text-sm"><iconify-icon icon="lucide:check-circle" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>Email campaigns + blog articles</li>
+              <li class="flex items-start gap-3 text-sm"><iconify-icon icon="lucide:check-circle" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>AI avatar videos + podcast</li>
+              <li class="flex items-start gap-3 text-sm"><iconify-icon icon="lucide:check-circle" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>All content AI-written in your voice</li>
             </ul>
           </div>
         </div>
         <div class="bg-[#C11F26] p-6 text-center text-white">
-          <div class="text-lg font-bold">You Save $4,650+ Every Single Month</div>
+          <div class="text-lg font-bold">You Save $4,000 – $14,000+ Every Single Month</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works -->
+  <!-- ============================================================ -->
+  <!-- PULSEFLOW SECTION -->
+  <!-- ============================================================ -->
+  <section id="pulseflow" class="py-24 px-6 scroll-mt-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#E6F1FB] text-[#0C447C] text-sm font-bold mb-4">
+          <iconify-icon icon="lucide:trending-up"></iconify-icon> Growth Tier
+        </div>
+        <h2 class="text-4xl md:text-5xl font-heading font-bold text-[#185FA5] mb-4">PulseFlow</h2>
+        <p class="text-xl text-[#64748B] max-w-2xl mx-auto">Scale your content engine and start converting leads into clients. Everything a growing agent needs in one place.</p>
+      </div>
+
+      <!-- PulseFlow Stats -->
+      <div class="grid grid-cols-3 gap-4 max-w-lg mx-auto mb-16">
+        <div class="bg-[#E6F1FB] rounded-2xl p-6 text-center">
+          <div class="text-3xl font-bold text-[#0C447C]">60</div>
+          <div class="text-xs text-[#0C447C]/70">Social Posts/Mo</div>
+        </div>
+        <div class="bg-[#E6F1FB] rounded-2xl p-6 text-center">
+          <div class="text-3xl font-bold text-[#0C447C]">4</div>
+          <div class="text-xs text-[#0C447C]/70">Email Campaigns/Mo</div>
+        </div>
+        <div class="bg-[#E6F1FB] rounded-2xl p-6 text-center">
+          <div class="text-3xl font-bold text-[#0C447C]">5</div>
+          <div class="text-xs text-[#0C447C]/70">Landing Pages/Mo</div>
+        </div>
+      </div>
+
+      <!-- PulseFlow Features Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div class="bg-white p-6 rounded-2xl border border-[#E2E8F0] hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#E6F1FB] rounded-xl flex items-center justify-center mb-4">
+            <iconify-icon icon="lucide:layout" class="text-2xl text-[#185FA5]"></iconify-icon>
+          </div>
+          <span class="inline-block text-xs font-bold text-[#0C447C] bg-[#E6F1FB] px-2 py-0.5 rounded-full mb-2">5 pages/mo</span>
+          <h3 class="text-lg font-bold mb-2">AI Landing Pages</h3>
+          <p class="text-sm text-[#64748B]">Each page built for a specific offer and ready to convert. More products, more campaigns, more coverage.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-[#E2E8F0] hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#E6F1FB] rounded-xl flex items-center justify-center mb-4">
+            <iconify-icon icon="lucide:share-2" class="text-2xl text-[#185FA5]"></iconify-icon>
+          </div>
+          <span class="inline-block text-xs font-bold text-[#0C447C] bg-[#E6F1FB] px-2 py-0.5 rounded-full mb-2">60 posts/mo</span>
+          <h3 class="text-lg font-bold mb-2">Social Media Posts</h3>
+          <p class="text-sm text-[#64748B]">Content written in your voice and ready to post every day of the month. Zero extra work from you.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-[#E2E8F0] hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#E6F1FB] rounded-xl flex items-center justify-center mb-4">
+            <iconify-icon icon="lucide:mail" class="text-2xl text-[#185FA5]"></iconify-icon>
+          </div>
+          <span class="inline-block text-xs font-bold text-[#0C447C] bg-[#E6F1FB] px-2 py-0.5 rounded-full mb-2">4 campaigns/mo</span>
+          <h3 class="text-lg font-bold mb-2">Email Campaigns</h3>
+          <p class="text-sm text-[#64748B]">AI-written email sequences that keep prospects warm until they're ready to buy. Nurture leads on autopilot.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-[#E2E8F0] hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#E6F1FB] rounded-xl flex items-center justify-center mb-4">
+            <iconify-icon icon="lucide:file-text" class="text-2xl text-[#185FA5]"></iconify-icon>
+          </div>
+          <span class="inline-block text-xs font-bold text-[#0C447C] bg-[#E6F1FB] px-2 py-0.5 rounded-full mb-2">2 articles/mo</span>
+          <h3 class="text-lg font-bold mb-2">AI Blog Articles</h3>
+          <p class="text-sm text-[#64748B]">Long-form content that ranks on Google and establishes you as an expert in your niche. Build SEO authority.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-[#E2E8F0] hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#E6F1FB] rounded-xl flex items-center justify-center mb-4">
+            <iconify-icon icon="lucide:bar-chart-3" class="text-2xl text-[#185FA5]"></iconify-icon>
+          </div>
+          <span class="inline-block text-xs font-bold text-[#0C447C] bg-[#E6F1FB] px-2 py-0.5 rounded-full mb-2">Included</span>
+          <h3 class="text-lg font-bold mb-2">Conversion Tracking</h3>
+          <p class="text-sm text-[#64748B]">See which campaigns bring real clients. Know exactly what's working and stop guessing where your leads come from.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-[#E2E8F0] hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#E6F1FB] rounded-xl flex items-center justify-center mb-4">
+            <iconify-icon icon="lucide:brain" class="text-2xl text-[#185FA5]"></iconify-icon>
+          </div>
+          <span class="inline-block text-xs font-bold text-[#0C447C] bg-[#E6F1FB] px-2 py-0.5 rounded-full mb-2">Your voice</span>
+          <h3 class="text-lg font-bold mb-2">Written in Your Voice</h3>
+          <p class="text-sm text-[#64748B]">All content is AI-generated based on your business, your brand, and your tone. It sounds like you because it's trained on you.</p>
+        </div>
+      </div>
+
+      <!-- PulseFlow Conversion Tracking Preview -->
+      <div class="max-w-3xl mx-auto mb-16">
+        <h3 class="text-xl font-bold text-[#185FA5] text-center mb-6">Know Exactly What's Working</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-[#F8FAFC] rounded-xl p-5 border border-[#E2E8F0] text-center">
+            <div class="text-xs text-[#64748B] mb-1">Leads this month</div>
+            <div class="text-2xl font-bold text-[#0F172A]">47</div>
+            <div class="text-xs text-green-600 font-medium mt-1">+23% from last month</div>
+          </div>
+          <div class="bg-[#F8FAFC] rounded-xl p-5 border border-[#E2E8F0] text-center">
+            <div class="text-xs text-[#64748B] mb-1">Email open rate</div>
+            <div class="text-2xl font-bold text-[#0F172A]">38%</div>
+            <div class="text-xs text-green-600 font-medium mt-1">Industry avg is 21%</div>
+          </div>
+          <div class="bg-[#F8FAFC] rounded-xl p-5 border border-[#E2E8F0] text-center">
+            <div class="text-xs text-[#64748B] mb-1">Top landing page</div>
+            <div class="text-2xl font-bold text-[#0F172A]">12%</div>
+            <div class="text-xs text-green-600 font-medium mt-1">Conversion rate</div>
+          </div>
+          <div class="bg-[#F8FAFC] rounded-xl p-5 border border-[#E2E8F0] text-center">
+            <div class="text-xs text-[#64748B] mb-1">Clients converted</div>
+            <div class="text-2xl font-bold text-[#0F172A]">6</div>
+            <div class="text-xs text-green-600 font-medium mt-1">From email campaigns</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PulseFlow Who It's For -->
+      <div class="max-w-3xl mx-auto mb-12">
+        <div class="bg-[#E6F1FB] p-6 rounded-2xl border-l-4 border-[#185FA5] mb-4">
+          <p class="text-sm text-[#0C447C]"><strong>The problem PulseFlow solves:</strong> Agents spending $300-$800/month on disconnected tools that don't work together -- a social scheduler here, an email platform there, a landing page builder somewhere else. PulseFlow replaces all of it for $129/month.</p>
+        </div>
+        <div class="bg-[#F0FDF4] p-6 rounded-2xl border-l-4 border-green-600">
+          <p class="text-sm text-green-900"><strong>Ideal for:</strong> Growing agents ready to systemize lead generation and email marketing. If you're generating leads but struggling to nurture them consistently, PulseFlow is built for you.</p>
+        </div>
+      </div>
+
+      <!-- PulseFlow Pricing CTA - Both Options -->
+      <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Member Price -->
+        <div class="bg-white rounded-3xl border-2 border-[#185FA5] p-8 text-center shadow-lg relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-[#C11F26] text-white text-[10px] font-bold uppercase rounded-full">Best Value</div>
+          <div class="inline-block px-3 py-1 bg-[#E6F1FB] text-[#0C447C] text-xs font-bold uppercase rounded-full mb-4">Member Price</div>
+          <div class="text-4xl font-bold text-[#0F172A] mb-1">$129 <span class="text-base font-normal text-[#64748B]">/ mo</span></div>
+          <div class="text-sm text-[#64748B] mb-6">Save $20/mo vs retail when you join Apex</div>
+          <a href="/signup" class="block w-full py-4 rounded-xl bg-[#185FA5] text-white font-bold text-lg hover:opacity-90 transition-opacity mb-3">Get PulseFlow — Member</a>
+          <p class="text-xs text-[#C11F26] font-bold">New reps: First month just $39</p>
+        </div>
+        <!-- Retail Price -->
+        <div class="bg-white rounded-3xl border-2 border-[#E2E8F0] p-8 text-center shadow-sm">
+          <div class="inline-block px-3 py-1 bg-[#F1F5F9] text-[#64748B] text-xs font-bold uppercase rounded-full mb-4">Retail Price</div>
+          <div class="text-4xl font-bold text-[#0F172A] mb-1">$149 <span class="text-base font-normal text-[#64748B]">/ mo</span></div>
+          <div class="text-sm text-[#64748B] mb-6">Full price — no membership required</div>
+          <a href="/signup" class="block w-full py-4 rounded-xl bg-[#64748B] text-white font-bold text-lg hover:opacity-90 transition-opacity mb-3">Get PulseFlow — Retail</a>
+          <p class="text-xs text-[#64748B]">Same features, standard pricing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="h-px bg-gradient-to-r from-transparent via-[#E2E8F0] to-transparent"></div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- PULSECOMMAND SECTION -->
+  <!-- ============================================================ -->
+  <section id="pulsecommand" class="py-24 px-6 bg-gradient-to-b from-white to-[#EEEDFE]/30 scroll-mt-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#EEEDFE] text-[#3C3489] text-sm font-bold mb-4">
+          <iconify-icon icon="lucide:crown"></iconify-icon> Elite Tier
+        </div>
+        <h2 class="text-4xl md:text-5xl font-heading font-bold text-[#534AB7] mb-4">PulseCommand</h2>
+        <p class="text-xl text-[#64748B] max-w-2xl mx-auto">A Fortune 500 marketing operation for $349/mo. AI avatar videos, podcast on every platform, unlimited content, white-glove onboarding.</p>
+      </div>
+
+      <!-- PulseCommand Stats -->
+      <div class="grid grid-cols-3 gap-4 max-w-lg mx-auto mb-16">
+        <div class="bg-[#EEEDFE] rounded-2xl p-6 text-center">
+          <div class="text-3xl font-bold text-[#3C3489]">&infin;</div>
+          <div class="text-xs text-[#3C3489]/70">Landing Pages</div>
+        </div>
+        <div class="bg-[#EEEDFE] rounded-2xl p-6 text-center">
+          <div class="text-3xl font-bold text-[#3C3489]">150+</div>
+          <div class="text-xs text-[#3C3489]/70">Social Posts/Mo</div>
+        </div>
+        <div class="bg-[#EEEDFE] rounded-2xl p-6 text-center">
+          <div class="text-3xl font-bold text-[#3C3489]">$499</div>
+          <div class="text-xs text-[#3C3489]/70">Retail Price</div>
+        </div>
+      </div>
+
+      <!-- PulseCommand Elite Features -->
+      <div class="mb-16">
+        <h3 class="text-xl font-bold text-[#534AB7] text-center mb-8">Elite-Only Features</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div class="bg-[#EEEDFE] p-6 rounded-2xl border border-[#AFA9EC]">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-[#CECBF6] rounded-xl flex items-center justify-center flex-shrink-0">
+                <iconify-icon icon="lucide:video" class="text-2xl text-[#3C3489]"></iconify-icon>
+              </div>
+              <div>
+                <span class="inline-block text-xs font-bold text-[#3C3489] bg-[#CECBF6] px-2 py-0.5 rounded-full mb-2">Elite Exclusive</span>
+                <h4 class="font-bold mb-1">AI Avatar Videos via HeyGen</h4>
+                <p class="text-sm text-[#3C3489]/80">Professional video content featuring your AI avatar -- no camera, no studio. Looks like you hired a production team.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#EEEDFE] p-6 rounded-2xl border border-[#AFA9EC]">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-[#CECBF6] rounded-xl flex items-center justify-center flex-shrink-0">
+                <iconify-icon icon="lucide:podcast" class="text-2xl text-[#3C3489]"></iconify-icon>
+              </div>
+              <div>
+                <span class="inline-block text-xs font-bold text-[#3C3489] bg-[#CECBF6] px-2 py-0.5 rounded-full mb-2">Elite Exclusive</span>
+                <h4 class="font-bold mb-1">Podcast on Every Major Platform</h4>
+                <p class="text-sm text-[#3C3489]/80">Spotify, Apple Podcasts, Amazon Music, and YouTube. Your AI-voiced podcast distributed everywhere -- fully managed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#EEEDFE] p-6 rounded-2xl border border-[#AFA9EC]">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-[#CECBF6] rounded-xl flex items-center justify-center flex-shrink-0">
+                <iconify-icon icon="lucide:globe" class="text-2xl text-[#3C3489]"></iconify-icon>
+              </div>
+              <div>
+                <span class="inline-block text-xs font-bold text-[#3C3489] bg-[#CECBF6] px-2 py-0.5 rounded-full mb-2">Elite Exclusive</span>
+                <h4 class="font-bold mb-1">Custom Domain + Branded YouTube</h4>
+                <p class="text-sm text-[#3C3489]/80">Your own domain name and a fully managed YouTube channel. Every piece of content lives under your brand.</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-[#EEEDFE] p-6 rounded-2xl border border-[#AFA9EC]">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-[#CECBF6] rounded-xl flex items-center justify-center flex-shrink-0">
+                <iconify-icon icon="lucide:handshake" class="text-2xl text-[#3C3489]"></iconify-icon>
+              </div>
+              <div>
+                <span class="inline-block text-xs font-bold text-[#3C3489] bg-[#CECBF6] px-2 py-0.5 rounded-full mb-2">Elite Exclusive</span>
+                <h4 class="font-bold mb-1">White-Glove Onboarding</h4>
+                <p class="text-sm text-[#3C3489]/80">A real team sets everything up for you. Voice clone, domain, YouTube, podcast distribution, avatar setup -- done by us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PulseCommand Also Includes -->
+      <div class="max-w-4xl mx-auto mb-16">
+        <h3 class="text-xl font-bold text-[#534AB7] text-center mb-8">Plus Everything in PulseFlow</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] text-center">
+            <iconify-icon icon="lucide:layout" class="text-2xl text-[#534AB7] mb-2"></iconify-icon>
+            <div class="font-bold text-sm">Unlimited Landing Pages</div>
+            <div class="text-xs text-[#64748B]">No cap — build as many as you need</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] text-center">
+            <iconify-icon icon="lucide:share-2" class="text-2xl text-[#534AB7] mb-2"></iconify-icon>
+            <div class="font-bold text-sm">150+ Social Posts</div>
+            <div class="text-xs text-[#64748B]">Dominant daily brand presence</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] text-center">
+            <iconify-icon icon="lucide:mail" class="text-2xl text-[#534AB7] mb-2"></iconify-icon>
+            <div class="font-bold text-sm">8+ Email Campaigns</div>
+            <div class="text-xs text-[#64748B]">Double the nurture sequences</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Podcast Distribution -->
+      <div class="max-w-3xl mx-auto mb-16">
+        <h3 class="text-xl font-bold text-[#534AB7] text-center mb-6">Your Podcast — Everywhere Your Audience Listens</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] text-center">
+            <div class="w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center mx-auto mb-2 text-xl">🎵</div>
+            <div class="font-bold text-sm">Spotify</div>
+            <div class="text-xs text-[#64748B]">Auto-published</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] text-center">
+            <div class="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center mx-auto mb-2 text-xl">🎙</div>
+            <div class="font-bold text-sm">Apple Podcasts</div>
+            <div class="text-xs text-[#64748B]">Auto-published</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] text-center">
+            <div class="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center mx-auto mb-2 text-xl">🎧</div>
+            <div class="font-bold text-sm">Amazon Music</div>
+            <div class="text-xs text-[#64748B]">Auto-published</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0] text-center">
+            <div class="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center mx-auto mb-2 text-xl">▶</div>
+            <div class="font-bold text-sm">YouTube</div>
+            <div class="text-xs text-[#64748B]">Channel managed</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- White-Glove Onboarding Steps -->
+      <div class="max-w-3xl mx-auto mb-16">
+        <h3 class="text-xl font-bold text-[#534AB7] text-center mb-6">Your Empire Live in 5 Days</h3>
+        <p class="text-[#64748B] text-center mb-8">You don't touch a single setting. Our team handles everything.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0]">
+            <div class="text-xs font-bold text-[#534AB7] uppercase mb-1">Step 1</div>
+            <div class="font-bold text-sm mb-1">Voice Clone Setup</div>
+            <div class="text-xs text-[#64748B]">We record and build your AI voice clone -- ready in 48 hours</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0]">
+            <div class="text-xs font-bold text-[#534AB7] uppercase mb-1">Step 2</div>
+            <div class="font-bold text-sm mb-1">Avatar Creation</div>
+            <div class="text-xs text-[#64748B]">HeyGen avatar built to match your look and brand</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0]">
+            <div class="text-xs font-bold text-[#534AB7] uppercase mb-1">Step 3</div>
+            <div class="font-bold text-sm mb-1">Domain + YouTube</div>
+            <div class="text-xs text-[#64748B]">Custom domain configured, YouTube channel set up and branded</div>
+          </div>
+          <div class="bg-white p-5 rounded-xl border border-[#E2E8F0]">
+            <div class="text-xs font-bold text-[#534AB7] uppercase mb-1">Step 4</div>
+            <div class="font-bold text-sm mb-1">Podcast Distribution</div>
+            <div class="text-xs text-[#64748B]">Listed on Spotify, Apple, Amazon Music, and YouTube -- all connected</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PulseCommand Who It's For -->
+      <div class="max-w-3xl mx-auto mb-12">
+        <div class="bg-[#EEEDFE] p-6 rounded-2xl border-l-4 border-[#534AB7] mb-4">
+          <p class="text-sm text-[#3C3489]"><strong>The problem PulseCommand solves:</strong> Elite agents need a Fortune 500 marketing operation -- professional video, podcast presence on every platform, unlimited content, and a brand that looks like a media company. That used to cost $5,000-$15,000/month. PulseCommand delivers it for $349/mo.</p>
+        </div>
+        <div class="bg-[#F0FDF4] p-6 rounded-2xl border-l-4 border-green-600">
+          <p class="text-sm text-green-900"><strong>Ideal for:</strong> Agency builders, team leaders, and top producers scaling a brand. If you're building a team, running multiple products, or want to be the dominant presence in your market -- this is built for you.</p>
+        </div>
+      </div>
+
+      <!-- PulseCommand Pricing CTA - Both Options -->
+      <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Member Price -->
+        <div class="bg-[#534AB7] rounded-3xl p-8 text-center text-white shadow-xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 px-4 py-1.5 bg-[#C11F26] text-white text-xs font-bold uppercase rounded-bl-xl">Best Value</div>
+          <div class="inline-block px-3 py-1 bg-[#AFA9EC] text-[#26215C] text-xs font-bold uppercase rounded-full mb-4">Member Price</div>
+          <div class="text-4xl font-bold mb-1">$349 <span class="text-base font-normal opacity-70">/ mo</span></div>
+          <div class="text-sm opacity-70 mb-6">Save $150/mo vs retail when you join Apex</div>
+          <ul class="text-left space-y-2 mb-8 text-sm">
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#AFA9EC]"></iconify-icon> AI avatar videos via HeyGen</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#AFA9EC]"></iconify-icon> Podcast on 4 platforms</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#AFA9EC]"></iconify-icon> Custom domain + YouTube</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#AFA9EC]"></iconify-icon> Unlimited pages + 150+ posts</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#AFA9EC]"></iconify-icon> White-glove onboarding</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#AFA9EC]"></iconify-icon> Everything in PulseFlow</li>
+          </ul>
+          <a href="/signup" class="block w-full py-4 rounded-xl bg-white text-[#534AB7] font-bold text-lg hover:scale-[1.02] transition-transform">Get PulseCommand — Member</a>
+        </div>
+        <!-- Retail Price -->
+        <div class="bg-white rounded-3xl border-2 border-[#534AB7]/30 p-8 text-center shadow-sm">
+          <div class="inline-block px-3 py-1 bg-[#EEEDFE] text-[#3C3489] text-xs font-bold uppercase rounded-full mb-4">Retail Price</div>
+          <div class="text-4xl font-bold text-[#0F172A] mb-1">$499 <span class="text-base font-normal text-[#64748B]">/ mo</span></div>
+          <div class="text-sm text-[#64748B] mb-6">Full price — no membership required</div>
+          <ul class="text-left space-y-2 mb-8 text-sm text-[#64748B]">
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#534AB7]"></iconify-icon> AI avatar videos via HeyGen</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#534AB7]"></iconify-icon> Podcast on 4 platforms</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#534AB7]"></iconify-icon> Custom domain + YouTube</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#534AB7]"></iconify-icon> Unlimited pages + 150+ posts</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#534AB7]"></iconify-icon> White-glove onboarding</li>
+            <li class="flex items-center gap-2"><iconify-icon icon="lucide:check-circle" class="text-[#534AB7]"></iconify-icon> Everything in PulseFlow</li>
+          </ul>
+          <a href="/signup" class="block w-full py-4 rounded-xl bg-[#534AB7] text-white font-bold text-lg hover:opacity-90 transition-opacity">Get PulseCommand — Retail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SIDE-BY-SIDE COMPARISON TABLE -->
+  <!-- ============================================================ -->
+  <section class="py-24 px-6 bg-[#F1F5F9]">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-heading font-bold text-[#213B8A] mb-4">Compare PulseFlow vs PulseCommand</h2>
+        <p class="text-[#64748B]">See exactly what's included in each tier.</p>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg border border-[#E2E8F0] overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-[#E2E8F0]">
+                <th class="text-left p-4 text-[#64748B] text-xs uppercase font-bold">Feature</th>
+                <th class="p-4 text-center text-[#185FA5] text-xs uppercase font-bold">PulseFlow</th>
+                <th class="p-4 text-center text-[#534AB7] text-xs uppercase font-bold">PulseCommand</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[#E2E8F0]">
+              <tr class="bg-[#F8FAFC]"><td class="p-4 text-[#64748B] font-bold">Member price</td><td class="p-4 text-center font-bold text-[#185FA5]">$129/mo</td><td class="p-4 text-center font-bold text-[#534AB7]">$349/mo</td></tr>
+              <tr class="bg-[#F8FAFC]"><td class="p-4 text-[#64748B] font-bold">Retail price</td><td class="p-4 text-center font-bold">$149/mo</td><td class="p-4 text-center font-bold">$499/mo</td></tr>
+              <tr class="bg-[#F8FAFC]"><td class="p-4 text-[#64748B] font-bold">Member savings</td><td class="p-4 text-center font-bold text-green-600">$20/mo</td><td class="p-4 text-center font-bold text-green-600">$150/mo</td></tr>
+              <tr><td class="p-4 text-[#64748B]">Landing pages/mo</td><td class="p-4 text-center">5</td><td class="p-4 text-center font-bold">Unlimited</td></tr>
+              <tr><td class="p-4 text-[#64748B]">Social posts/mo</td><td class="p-4 text-center">60</td><td class="p-4 text-center font-bold">150+</td></tr>
+              <tr><td class="p-4 text-[#64748B]">Email campaigns/mo</td><td class="p-4 text-center">4</td><td class="p-4 text-center">8+</td></tr>
+              <tr><td class="p-4 text-[#64748B]">Blog articles/mo</td><td class="p-4 text-center">2</td><td class="p-4 text-center">4+</td></tr>
+              <tr><td class="p-4 text-[#64748B]">Conversion tracking</td><td class="p-4 text-center text-green-600 font-bold">&#10003;</td><td class="p-4 text-center text-green-600 font-bold">&#10003;</td></tr>
+              <tr><td class="p-4 text-[#64748B]">AI-cloned voice</td><td class="p-4 text-center text-[#64748B]">--</td><td class="p-4 text-center text-green-600 font-bold">&#10003;</td></tr>
+              <tr><td class="p-4 text-[#64748B]">AI avatar videos (HeyGen)</td><td class="p-4 text-center text-[#64748B]">--</td><td class="p-4 text-center text-green-600 font-bold">&#10003;</td></tr>
+              <tr><td class="p-4 text-[#64748B]">Podcast (Spotify/Apple/Amazon)</td><td class="p-4 text-center text-[#64748B]">--</td><td class="p-4 text-center text-green-600 font-bold">&#10003;</td></tr>
+              <tr><td class="p-4 text-[#64748B]">Custom branded domain</td><td class="p-4 text-center text-[#64748B]">--</td><td class="p-4 text-center text-green-600 font-bold">&#10003;</td></tr>
+              <tr><td class="p-4 text-[#64748B]">YouTube channel management</td><td class="p-4 text-center text-[#64748B]">--</td><td class="p-4 text-center text-green-600 font-bold">&#10003;</td></tr>
+              <tr><td class="p-4 text-[#64748B]">White-glove onboarding</td><td class="p-4 text-center text-[#64748B]">--</td><td class="p-4 text-center text-green-600 font-bold">&#10003;</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- HOW IT WORKS -->
+  <!-- ============================================================ -->
   <section class="py-24 px-6">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-3xl font-heading font-bold text-[#213B8A] text-center mb-20">Simple. Powerful. Hands-Off.</h2>
+      <h2 class="text-3xl font-heading font-bold text-[#213B8A] text-center mb-4">Live in 24 Hours. No Tech Skills Required.</h2>
+      <p class="text-[#64748B] text-center mb-16 max-w-xl mx-auto">No setup headaches. Just results.</p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div class="text-center">
           <div class="w-20 h-20 bg-[#F1F5F9] rounded-full flex items-center justify-center mx-auto mb-8 relative">
-            <iconify-icon icon="lucide:upload-cloud" class="text-3xl text-[#213B8A]"></iconify-icon>
-            <div class="absolute -top-2 -right-2 w-8 h-8 bg-[#C11F26] rounded-full flex items-center justify-center text-white font-bold">1</div>
+            <iconify-icon icon="lucide:message-square" class="text-3xl text-[#213B8A]"></iconify-icon>
+            <div class="absolute -top-2 -right-2 w-8 h-8 bg-[#C11F26] rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
           </div>
-          <h3 class="text-xl font-bold mb-4">You Upload. We Create.</h3>
-          <p class="text-[#64748B] leading-relaxed">
-            Upload your assets to your custom portal. Our AI repurposes them into optimized formats for Instagram, TikTok, LinkedIn, and more.
-          </p>
+          <h3 class="text-xl font-bold mb-4">Tell Us About Your Business</h3>
+          <p class="text-[#64748B]">Answer a few questions about who you serve, what you sell, and where you want to grow.</p>
         </div>
         <div class="text-center">
           <div class="w-20 h-20 bg-[#F1F5F9] rounded-full flex items-center justify-center mx-auto mb-8 relative">
-            <iconify-icon icon="lucide:calendar" class="text-3xl text-[#213B8A]"></iconify-icon>
-            <div class="absolute -top-2 -right-2 w-8 h-8 bg-[#C11F26] rounded-full flex items-center justify-center text-white font-bold">2</div>
+            <iconify-icon icon="lucide:cpu" class="text-3xl text-[#213B8A]"></iconify-icon>
+            <div class="absolute -top-2 -right-2 w-8 h-8 bg-[#C11F26] rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
           </div>
-          <h3 class="text-xl font-bold mb-4">We Post. You Grow.</h3>
-          <p class="text-[#64748B] leading-relaxed">
-            Our system schedules and publishes your content across all your platforms. You never touch a scheduling tool or write a caption.
-          </p>
+          <h3 class="text-xl font-bold mb-4">AI Builds Your Marketing Stack</h3>
+          <p class="text-[#64748B]">Within 24 hours -- landing pages live, email campaigns ready, social posts queued, blog articles written.</p>
         </div>
         <div class="text-center">
           <div class="w-20 h-20 bg-[#F1F5F9] rounded-full flex items-center justify-center mx-auto mb-8 relative">
-            <iconify-icon icon="lucide:trending-up" class="text-3xl text-[#213B8A]"></iconify-icon>
-            <div class="absolute -top-2 -right-2 w-8 h-8 bg-[#C11F26] rounded-full flex items-center justify-center text-white font-bold">3</div>
+            <iconify-icon icon="lucide:rocket" class="text-3xl text-[#213B8A]"></iconify-icon>
+            <div class="absolute -top-2 -right-2 w-8 h-8 bg-[#C11F26] rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
           </div>
-          <h3 class="text-xl font-bold mb-4">You Get Results.</h3>
-          <p class="text-[#64748B] leading-relaxed">
-            Monthly reporting and a growing audience. While competitors struggle for consistency, you are showing up everywhere automatically.
-          </p>
+          <h3 class="text-xl font-bold mb-4">Fresh Content Every Month</h3>
+          <p class="text-[#64748B]">New campaigns, pages, and posts delivered automatically. Your marketing runs while you focus on clients.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="py-20 px-6 bg-[#213B8A] text-white text-center">
+  <!-- ============================================================ -->
+  <!-- FAQ -->
+  <!-- ============================================================ -->
+  <section class="py-24 px-6 bg-[#F1F5F9]/50">
     <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-heading font-bold mb-6">Start Growing Your Business Today</h2>
-      <p class="text-lg opacity-80 mb-10">Get the full PulseFlow service for just $39 your first month when you join Apex as a representative.</p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-        <a href="/signup" class="px-10 py-4 rounded-xl bg-[#C11F26] text-white font-bold text-xl shadow-lg hover:scale-105 transition-transform">Get PulseFlow -- $39 First Month</a>
-        <a href="/pricing" class="text-sm font-medium underline underline-offset-4 opacity-70 hover:opacity-100">See PulseCommand Pro for Advanced Features</a>
+      <h2 class="text-3xl font-heading font-bold text-[#213B8A] text-center mb-12">Common Questions</h2>
+      <div class="space-y-4">
+        <div class="p-6 bg-white rounded-2xl border border-[#E2E8F0]">
+          <h4 class="font-bold mb-2">How is PulseFlow different from PulseCommand?</h4>
+          <p class="text-sm text-[#64748B]">PulseFlow is the growth tier -- 60 social posts, 5 landing pages, email campaigns, and blog articles. PulseCommand adds AI avatar videos, podcast distribution on 4 platforms, custom domain, YouTube channel management, and white-glove onboarding with unlimited landing pages and 150+ posts.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-[#E2E8F0]">
+          <h4 class="font-bold mb-2">Do I need to write any of the content myself?</h4>
+          <p class="text-sm text-[#64748B]">No. AI writes everything based on your answers about your business. You review and approve -- or we handle posting too.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-[#E2E8F0]">
+          <h4 class="font-bold mb-2">What is a HeyGen AI avatar?</h4>
+          <p class="text-sm text-[#64748B]">HeyGen creates a photorealistic digital version of you that can deliver scripted video content. It looks like you recorded a professional video -- without ever sitting in front of a camera. This feature is exclusive to PulseCommand.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-[#E2E8F0]">
+          <h4 class="font-bold mb-2">What does white-glove onboarding mean?</h4>
+          <p class="text-sm text-[#64748B]">A real person from our team handles every setup step -- voice clone, HeyGen avatar, domain configuration, YouTube channel, podcast distribution. You don't set up anything yourself. Most setups are complete within 5 business days.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-[#E2E8F0]">
+          <h4 class="font-bold mb-2">Is there a contract?</h4>
+          <p class="text-sm text-[#64748B]">No. Both PulseFlow and PulseCommand are month-to-month. Upgrade, downgrade, or cancel anytime.</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-[#E2E8F0]">
+          <h4 class="font-bold mb-2">How does the $39 first-month deal work?</h4>
+          <p class="text-sm text-[#64748B]">New Apex representatives get their first month of PulseFlow for just $39 -- a $110 discount. After the first month, it continues at the regular member rate of $129/mo.</p>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- FINAL CTA -->
+  <!-- ============================================================ -->
+  <section class="py-20 px-6 bg-gradient-to-r from-[#213B8A] to-[#534AB7] text-white text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6">Pick Your Plan. Start Growing Today.</h2>
+      <p class="text-lg opacity-80 mb-10 max-w-2xl mx-auto">Stop paying agency prices. Stop juggling 5 different tools. Let Pulse run your entire marketing operation while you focus on what matters -- your clients.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <a href="/signup" class="w-full sm:w-auto px-10 py-4 rounded-xl bg-[#185FA5] text-white font-bold text-xl shadow-lg hover:scale-105 transition-transform border-2 border-white/20">PulseFlow — $129/mo</a>
+        <a href="/signup" class="w-full sm:w-auto px-10 py-4 rounded-xl bg-[#C11F26] text-white font-bold text-xl shadow-lg hover:scale-105 transition-transform">PulseCommand — $349/mo</a>
+      </div>
+      <p class="mt-4 text-sm text-white/50">New reps: first month just $39. No contracts. Cancel anytime.</p>
     </div>
   </section>
 
@@ -172,7 +632,7 @@
       <a href="/"><img src="https://uxmagic.blob.core.windows.net/components/uploads/Apex%20Affinity%20Grop%20Logo%20-%20Full%20Color%20PNG-1776932865348-3sr5k0akniw.png" alt="Apex Logo" class="h-8 w-auto grayscale opacity-50"></a>
       <div class="flex gap-8 text-sm text-[#64748B] font-medium">
         <a href="/opportunity" class="hover:text-[#213B8A]">Opportunity</a>
-        <a href="/pulseflow" class="hover:text-[#213B8A]">PulseFlow AI</a>
+        <a href="/pulseflow" class="hover:text-[#213B8A]">Pulse</a>
         <a href="/insurance" class="hover:text-[#213B8A]">Insurance</a>
         <a href="/pricing" class="hover:text-[#213B8A]">Pricing</a>
       </div>
