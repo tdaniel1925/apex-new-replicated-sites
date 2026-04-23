@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apex Affinity Group - AI-Powered Marketing & Life Insurance Business Opportunity">
+    <title>Apex Affinity Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.3.0/dist/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: 'var(--background)',
+              foreground: 'var(--foreground)',
+              primary: { DEFAULT: 'var(--primary)', foreground: 'var(--primary-foreground)' },
+              secondary: { DEFAULT: 'var(--secondary)', foreground: 'var(--secondary-foreground)' },
+              tertiary: 'var(--tertiary)',
+              muted: { DEFAULT: 'var(--muted)', foreground: 'var(--muted-foreground)' },
+              card: { DEFAULT: 'var(--card)' },
+              border: 'var(--border)',
+              input: 'var(--input)',
+              ring: 'var(--ring)',
+            },
+            fontFamily: {
+              heading: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+
+<div class="min-h-screen w-full bg-background flex flex-col relative font-sans text-foreground">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border px-6 py-4">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <a href="/">
+          <img src="https://uxmagic.blob.core.windows.net/components/uploads/Apex%20Affinity%20Grop%20Logo%20-%20Full%20Color%20PNG-1776932865348-3sr5k0akniw.png" alt="Apex Affinity Group" class="h-10 w-auto">
+        </a>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/opportunity" class="text-sm font-medium hover:text-[#213B8A] transition-colors">Opportunity</a>
+        <a href="/pulseflow" class="text-sm font-medium hover:text-[#213B8A] transition-colors">PulseFlow AI</a>
+        <a href="/insurance" class="text-sm font-medium hover:text-[#213B8A] transition-colors">Insurance</a>
+        <a href="/pricing" class="text-sm font-medium hover:text-[#213B8A] transition-colors">Pricing</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="/join" class="px-5 py-2.5 rounded-lg bg-[#213B8A] text-white font-semibold text-sm hover:opacity-90 transition-opacity">Join Apex Today</a>
+        <button id="menu-btn" class="md:hidden flex flex-col justify-center" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="flex-col gap-4 pt-4 md:hidden">
+      <a href="/opportunity" class="block py-2 text-sm font-medium hover:text-[#213B8A]">Opportunity</a>
+      <a href="/pulseflow" class="block py-2 text-sm font-medium hover:text-[#213B8A]">PulseFlow AI</a>
+      <a href="/insurance" class="block py-2 text-sm font-medium hover:text-[#213B8A]">Insurance</a>
+      <a href="/pricing" class="block py-2 text-sm font-medium hover:text-[#213B8A]">Pricing</a>
+      <a href="/join" class="block py-2 text-sm font-bold text-[#213B8A]">Join Apex Today</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-16 px-6 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[#213B8A]/5 via-transparent to-[#C11F26]/5 -z-10"></div>
+    <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-5xl md:text-7xl font-heading font-bold tracking-tight text-[#213B8A] mb-6">
+        The Future of Business Is Here.<br><span class="text-[#C11F26]">And You Can Own It.</span>
+      </h1>
+      <p class="max-w-3xl mx-auto text-lg md:text-xl text-[#64748B] leading-relaxed mb-10">
+        Apex Affinity Group is the only platform in the world combining AI-powered marketing and life insurance into one simple, profitable business opportunity.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/join" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#213B8A] text-white font-bold text-lg shadow-lg hover:scale-105 transition-transform text-center">Get Started Today</a>
+        <a href="/opportunity" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white border-2 border-[#213B8A] text-[#213B8A] font-bold text-lg hover:bg-[#213B8A]/5 transition-colors text-center">See How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="bg-[#213B8A] py-4">
+    <div class="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-center gap-6 md:gap-12 text-white/80 text-sm font-medium">
+      <span class="flex items-center gap-2"><iconify-icon icon="lucide:star" class="text-[#C11F26]"></iconify-icon> AI Marketing</span>
+      <span class="flex items-center gap-2"><iconify-icon icon="lucide:star" class="text-[#C11F26]"></iconify-icon> Life Insurance</span>
+      <span class="flex items-center gap-2"><iconify-icon icon="lucide:star" class="text-[#C11F26]"></iconify-icon> Real Income</span>
+      <span class="flex items-center gap-2"><iconify-icon icon="lucide:star" class="text-[#C11F26]"></iconify-icon> Real Tools</span>
+      <span class="flex items-center gap-2"><iconify-icon icon="lucide:star" class="text-[#C11F26]"></iconify-icon> Real Support</span>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <section class="py-24 px-6 bg-[#F1F5F9]/30">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#213B8A] mb-4">Everything You Need. One Simple Platform.</h2>
+        <div class="h-1.5 w-24 bg-[#C11F26] mx-auto rounded-full"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-[#F8FAFC] p-8 rounded-2xl shadow-sm border border-[#E2E8F0] hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#213B8A]/10 rounded-xl flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:zap" class="text-2xl text-[#213B8A]"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Save $119 Instantly</h3>
+          <p class="text-[#64748B] leading-relaxed">
+            Get immediate access to PulseFlow AI Marketing -- normally $149/month -- for just $39 your first month. Your business pays for itself from day one.
+          </p>
+        </div>
+        <div class="bg-[#F8FAFC] p-8 rounded-2xl shadow-sm border border-[#E2E8F0] hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#213B8A]/10 rounded-xl flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:shield" class="text-2xl text-[#213B8A]"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Build a Career in Insurance</h3>
+          <p class="text-[#64748B] leading-relaxed">
+            Help people do more with their money. As a licensed professional, show clients a smarter way to save and protect their families.
+          </p>
+        </div>
+        <div class="bg-[#F8FAFC] p-8 rounded-2xl shadow-sm border border-[#E2E8F0] hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-[#213B8A]/10 rounded-xl flex items-center justify-center mb-6">
+            <iconify-icon icon="lucide:chart-bar" class="text-2xl text-[#213B8A]"></iconify-icon>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Earn $500K+ a Year</h3>
+          <p class="text-[#64748B] leading-relaxed">
+            Start earning $1,000 to $3,000 a month right now. Build your team and unlock overrides and residual income that compounds.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="py-16 bg-[#213B8A] text-white">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="text-4xl font-bold mb-1">$500K</div>
+        <div class="text-sm text-white/70">Annual Potential</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold mb-1">$119</div>
+        <div class="text-sm text-white/70">Instant Savings</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold mb-1">10</div>
+        <div class="text-sm text-white/70">Social Platforms</div>
+      </div>
+      <div>
+        <div class="text-4xl font-bold mb-1">60</div>
+        <div class="text-sm text-white/70">Posts Per Month</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two Pillars Section -->
+  <section class="py-24 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row items-center gap-16">
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl md:text-4xl font-heading font-bold text-[#213B8A] mb-6">Two Industries. One Platform. Zero Competition.</h2>
+          <p class="text-lg text-[#64748B] mb-6">
+            Nobody else does what Apex does. We have combined the two most powerful growth industries of our time -- <span class="text-[#213B8A] font-semibold">artificial intelligence</span> and <span class="text-[#C11F26] font-semibold">life insurance</span> -- into a single business.
+          </p>
+          <div class="space-y-4">
+            <div class="flex gap-4 p-4 bg-[#F1F5F9]/50 rounded-xl border border-[#E2E8F0]">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#213B8A] text-white flex items-center justify-center font-bold">1</div>
+              <p class="text-sm text-[#64748B]"><strong class="text-[#0F172A]">AI Marketing:</strong> Tools that agencies charge $4,800 to $12,000 for, delivered at just $149.</p>
+            </div>
+            <div class="flex gap-4 p-4 bg-[#F1F5F9]/50 rounded-xl border border-[#E2E8F0]">
+              <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#C11F26] text-white flex items-center justify-center font-bold">2</div>
+              <p class="text-sm text-[#64748B]"><strong class="text-[#0F172A]">Insurance:</strong> Help people make smarter financial decisions and earn commissions doing it.</p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2 relative">
+          <div class="aspect-video bg-[#F1F5F9] rounded-2xl overflow-hidden shadow-2xl flex items-center justify-center border border-[#E2E8F0]">
+             <iconify-icon icon="lucide:layers" class="text-9xl text-[#213B8A]/20"></iconify-icon>
+          </div>
+          <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-[#E2E8F0] hidden md:block">
+            <div class="text-xs font-bold text-[#C11F26] uppercase tracking-widest mb-1">Unfair Advantage</div>
+            <div class="text-2xl font-bold text-[#213B8A]">Apex Ecosystem</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 px-6 bg-gradient-to-r from-[#213B8A] to-[#1E40AF] text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-heading font-bold mb-6">Ready to Make Your Move?</h2>
+      <p class="text-xl text-white/90 mb-10">
+        Join Apex today and get your first month of PulseFlow AI Marketing for just $39. Start building. Start earning. Start growing.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <a href="/join" class="w-full sm:w-auto px-10 py-4 rounded-xl bg-[#C11F26] text-white font-bold text-xl shadow-lg hover:scale-105 transition-transform text-center">Join Apex Today</a>
+        <a href="/opportunity" class="text-lg font-semibold underline underline-offset-4 hover:text-[#C11F26] transition-colors">Learn About the Opportunity</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#F1F5F9] py-12 px-6 border-t border-[#E2E8F0]">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+      <a href="/">
+        <img src="https://uxmagic.blob.core.windows.net/components/uploads/Apex%20Affinity%20Grop%20Logo%20-%20Full%20Color%20PNG-1776932865348-3sr5k0akniw.png" alt="Apex Logo" class="h-8 w-auto grayscale opacity-50">
+      </a>
+      <div class="flex gap-8 text-sm text-[#64748B] font-medium">
+        <a href="/opportunity" class="hover:text-[#213B8A]">Opportunity</a>
+        <a href="/pulseflow" class="hover:text-[#213B8A]">PulseFlow AI</a>
+        <a href="/insurance" class="hover:text-[#213B8A]">Insurance</a>
+        <a href="/pricing" class="hover:text-[#213B8A]">Pricing</a>
+      </div>
+      <p class="text-xs text-[#64748B]">&copy; 2025 Apex Affinity Group. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
